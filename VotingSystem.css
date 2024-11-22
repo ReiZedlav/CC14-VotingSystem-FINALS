@@ -5,7 +5,7 @@
 
 .external-sidebar{
     background-color: rgb(30, 13, 104);
-    height: 729px;
+    height: 100vh;
     width: 200px;
     display: flex;
     justify-content: center;
@@ -99,7 +99,7 @@ body{
 .inner-content{
     display: grid;
     margin-top: 90px;
-    height: 500px;
+    height: 70vh; 
     grid-template-columns: 400px 790px;
     border: 5px solid black;
 }
@@ -149,7 +149,7 @@ body{
 
 .createNew input{
     margin-top: 10px;
-    padding: 6px;
+    padding: 4px;
     border: none;
     border-radius: 10px;
 }
@@ -173,7 +173,7 @@ body{
 
 .terminateEmployee input{
     margin-top: 30px;
-    padding: 50px;
+    padding: 20px;
     border: none;
     border-radius: 10px;
 }
@@ -223,7 +223,7 @@ body{
 
 .dissolveDepartment input{
     margin-top: 30px;
-    padding: 50px;
+    padding: 20px;
     border: none;
     border-radius: 10px;
 }
@@ -273,7 +273,7 @@ body{
 
 .abandonProject input{
     margin-top: 30px;
-    padding: 50px;
+    padding: 20px;
     border: none;
     border-radius: 10px;
 }

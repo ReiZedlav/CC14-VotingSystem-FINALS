@@ -31,6 +31,12 @@ CREATE TABLE VoterBiodata(
     FOREIGN KEY (VoterID) REFERENCES Voters(VoterID)
 );
 
+CREATE TABLE VoterCredentials(
+    VoterID INT,
+    Password varchar(255),
+    FOREIGN KEY (VoterID) REFERENCES Voters(VoterID)
+);
+
 //--------------------------------------------------------------------------------
 
 CREATE TABLE Nominee(

@@ -41,8 +41,7 @@ function createForm() {
             <input type="text" placeholder="Status: ">
             <input type="text" placeholder="Phone Number: ">
             <input type="text" placeholder="Email: ">
-            
-            
+            <input type="password" placeholder="Password: ">
             <input type="submit" id="buttonCursor">
         </form>
     </div>
