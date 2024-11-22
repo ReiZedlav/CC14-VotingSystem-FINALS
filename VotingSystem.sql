@@ -4,7 +4,8 @@ CREATE TABLE Voters(
     VoterID INT AUTO_INCREMENT PRIMARY KEY,
     FirstName VARCHAR(150),
     LastName VARCHAR(150),
-    LastVotedIn DATE
+    LastVotedIn DATE,
+    Voted BOOLEAN
 );
 
 CREATE TABLE VoterContacts(
