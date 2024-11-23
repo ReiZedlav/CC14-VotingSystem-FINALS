@@ -28,7 +28,7 @@ function createForm() {
     const div = document.querySelector('.formShifter');
     div.innerHTML = `
     <div class="createNew">
-        <form id="registerData" method="POST" action="registerVoterInfo.php">
+        <form id="registerData" method="POST" action="registerVoter.php">
             <label> REGISTER A VOTER </label>
             <input type="text" name="firstName" placeholder="First Name: ">
             <input type="text" name="LastName" placeholder="Last Name: ">
@@ -38,7 +38,7 @@ function createForm() {
             <input type="text" name="voterAge" placeholder="Age: ">
             <input type="text" name="voterBirthday" placeholder="Birthday: ">
             <input type="text" name="voterGender" placeholder="Gender: ">
-            <input type="text" name=""voterStatus placeholder="Status: ">
+            <input type="text" name="voterStatus" placeholder="Status: ">
             <input type="text" name="voterPhoneNumber" placeholder="Phone Number: ">
             <input type="text" name="voterEmail" placeholder="Email: ">
             <input type="password" name="voterPassword" placeholder="Password: ">
@@ -503,17 +503,17 @@ function createProjectForm() {
     const div = document.querySelector('.formShifter');
     div.innerHTML = `
     <div class="createProject">
-        <form>
+        <form method="POST" action="registerNominee.php">
             <label> INSERT NOMINEE DATA </label>
-            <input type="text" placeholder="First Name: ">
-            <input type="text" placeholder="Last Name: ">
-            <input type="text" placeholder="Age: ">
-            <input type="text" placeholder="Gender: ">
-            <input type="text" placeholder="Birthdate: ">
-            <input type="text" placeholder="Status: ">
-            <input type="text" placeholder="Position: ">
-            <input type="text" placeholder="Party: ">
-            <input type="text" placeholder="City: ">
+            <input type="text" name="FirstName" placeholder="First Name: ">
+            <input type="text" name="LastName" placeholder="Last Name: ">
+            <input type="text" name="Age" placeholder="Age: ">
+            <input type="text" name="Gender" placeholder="Gender: ">
+            <input type="text" name="Birthdate" placeholder="Birthdate: ">
+            <input type="text" name="CivilStatus" placeholder="Status: ">
+            <input type="text" name="Position" placeholder="Position: ">
+            <input type="text" name="Party" placeholder="Party: ">
+            <input type="text" name="City" placeholder="City: ">
             <input type="submit" id="buttonCursor">
         </form>
     </div>
