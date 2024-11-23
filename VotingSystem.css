@@ -148,8 +148,8 @@ body{
 }
 
 .createNew input{
-    margin-top: 10px;
-    padding: 4px;
+    margin-top: 11px;
+    padding: 3px;
     border: none;
     border-radius: 10px;
 }
@@ -313,7 +313,9 @@ body{
     cursor: pointer;
     background-color: black;
     color: white;
+    margin: 10px;
 }
+
 
 .terminateSize-submit{
     font-size: 40px;

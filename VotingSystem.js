@@ -28,20 +28,20 @@ function createForm() {
     const div = document.querySelector('.formShifter');
     div.innerHTML = `
     <div class="createNew">
-        <form>
+        <form id="registerData" method="POST" action="registerVoterInfo.php">
             <label> REGISTER A VOTER </label>
-            <input type="text" placeholder="First Name: ">
-            <input type="text" placeholder="Last Name: ">
-            <input type="text" placeholder="Address: ">
-            <input type="text" placeholder="City: ">
-            <input type="text" placeholder="Barangay: ">
-            <input type="text" placeholder="Age: ">
-            <input type="text" placeholder="Birthday: ">
-            <input type="text" placeholder="Gender: ">
-            <input type="text" placeholder="Status: ">
-            <input type="text" placeholder="Phone Number: ">
-            <input type="text" placeholder="Email: ">
-            <input type="password" placeholder="Password: ">
+            <input type="text" name="firstName" placeholder="First Name: ">
+            <input type="text" name="LastName" placeholder="Last Name: ">
+            <input type="text" name="voterAddress" placeholder="Address: ">
+            <input type="text" name="voterCity" placeholder="City: ">
+            <input type="text" name="voterBarangay" placeholder="Barangay: ">
+            <input type="text" name="voterAge" placeholder="Age: ">
+            <input type="text" name="voterBirthday" placeholder="Birthday: ">
+            <input type="text" name="voterGender" placeholder="Gender: ">
+            <input type="text" name=""voterStatus placeholder="Status: ">
+            <input type="text" name="voterPhoneNumber" placeholder="Phone Number: ">
+            <input type="text" name="voterEmail" placeholder="Email: ">
+            <input type="password" name="voterPassword" placeholder="Password: ">
             <input type="submit" id="buttonCursor">
         </form>
     </div>

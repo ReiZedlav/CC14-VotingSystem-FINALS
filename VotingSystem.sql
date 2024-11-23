@@ -1,5 +1,7 @@
 CREATE DATABASE VotingSystem;
 
+USE VotingSystem;
+
 CREATE TABLE Voters(
     VoterID INT AUTO_INCREMENT PRIMARY KEY,
     FirstName VARCHAR(150),
@@ -38,7 +40,18 @@ CREATE TABLE VoterCredentials(
     FOREIGN KEY (VoterID) REFERENCES Voters(VoterID)
 );
 
-//--------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
 
 CREATE TABLE Nominee(
     NomineeID INT AUTO_INCREMENT PRIMARY KEY,
@@ -63,7 +76,20 @@ CREATE TABLE NomineePosition(
     FOREIGN KEY (NomineeID) REFERENCES Nominee(NomineeID)
 );
 
-//-----------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 CREATE TABLE Candidate(
     CandidateID INT AUTO_INCREMENT PRIMARY KEY,
