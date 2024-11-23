@@ -28,7 +28,7 @@ function createForm() {
     const div = document.querySelector('.formShifter');
     div.innerHTML = `
     <div class="createNew">
-        <form id="registerData" method="POST" action="registerVoter.php">
+        <form id="registerData" method="POST" action="registerVoterInfo.php">
             <label> REGISTER A VOTER </label>
             <input type="text" name="firstName" placeholder="First Name: ">
             <input type="text" name="LastName" placeholder="Last Name: ">
@@ -57,20 +57,20 @@ function modifyForm() {
     const div = document.querySelector('.formShifter');
     div.innerHTML = `
     <div class="modifyEmployee">
-        <form>
+        <form method="POST" action="modifyVoterInfo.php">
             <label> MODIFY VOTER RECORDS </label>
-            <input type="text" placeholder="VOTER ID: ">
-            <input type="text" placeholder="First Name: ">
-            <input type="text" placeholder="Last Name: ">
-            <input type="text" placeholder="Address: ">
-            <input type="text" placeholder="City: ">
-            <input type="text" placeholder="Barangay: ">
-            <input type="text" placeholder="Age: ">
-            <input type="text" placeholder="Birthday: ">
-            <input type="text" placeholder="Gender: ">
-            <input type="text" placeholder="Status: ">
-            <input type="text" placeholder="Phone Number: ">
-            <input type="text" placeholder="Email: ">
+            <input type="text" name="voter_id" placeholder="VOTER ID: ">
+            <input type="text" name="first_name" placeholder="First Name: ">
+            <input type="text" name="last_name" placeholder="Last Name: ">
+            <input type="text" name="address" placeholder="Address: ">
+            <input type="text" name="city" placeholder="City: ">
+            <input type="text" name="barangay" placeholder="Barangay: ">
+            <input type="text" name="age" placeholder="Age: ">
+            <input type="text" name="birthdate" placeholder="Birthday: ">
+            <input type="text" name="gender" placeholder="Gender: ">
+            <input type="text" name="status" placeholder="Status: ">
+            <input type="text" name="phone" placeholder="Phone Number: ">
+            <input type="text" name="email" placeholder="Email: ">
             <input type="submit" id="buttonCursor">
         </form>
     </div>
@@ -529,18 +529,18 @@ function reviseForm() {
     const div = document.querySelector('.formShifter');
     div.innerHTML = `
     <div class="reviseProject">
-        <form>
+        <form method="POST" action="modifyNominee.php">
             <label> UPDATE NOMINEE DATA </label>
-            <input type="text" placeholder="NOMINEE ID: ">
-            <input type="text" placeholder="First Name: ">
-            <input type="text" placeholder="Last Name: ">
-            <input type="text" placeholder="Age: ">
-            <input type="text" placeholder="Gender: ">
-            <input type="text" placeholder="Birthdate: ">
-            <input type="text" placeholder="Status: ">
-            <input type="text" placeholder="Position: ">
-            <input type="text" placeholder="Party: ">
-            <input type="text" placeholder="City: ">
+            <input type="text" name="nominee_id" placeholder="NOMINEE ID: ">
+            <input type="text" name="first_name" placeholder="First Name: ">
+            <input type="text" name="last_name" placeholder="Last Name: ">
+            <input type="text" name="age" placeholder="Age: ">
+            <input type="text" name="gender" placeholder="Gender: ">
+            <input type="text" name="birthdate" placeholder="Birthdate: ">
+            <input type="text" name="status" placeholder="Status: ">
+            <input type="text" name="position" placeholder="Position: ">
+            <input type="text" name="party" placeholder="Party: ">
+            <input type="text" name="city" placeholder="City: ">
             <input type="submit" id="buttonCursor">
         </form>
     </div>

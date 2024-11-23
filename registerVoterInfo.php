@@ -24,35 +24,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $voterEmail = $_POST['voterEmail'];
     $voterPassword = password_hash($_POST['voterPassword'], PASSWORD_BCRYPT); 
 
-    // Insert into Voters table
+   
     $insertVoterQuery = "INSERT INTO Voters (FirstName, LastName) VALUES ('$firstName', '$LastName')";
     if (!$conn->query($insertVoterQuery)) {
         die("Error inserting into Voters table: " . $conn->error);
     }
-    $voterID = $conn->insert_id; // Get the last inserted ID
+    $voterID = $conn->insert_id; // get last inserted id 
 
-    // Insert into VoterContacts table
+ 
     $insertContactQuery = "INSERT INTO VoterContacts (VoterID, EmailAddress, PhoneNumber) 
                            VALUES ('$voterID', '$voterEmail', '$voterPhoneNumber')";
     if (!$conn->query($insertContactQuery)) {
         die("Error inserting into VoterContacts table: " . $conn->error);
     }
 
-    // Insert into VoterAddress table
+  
     $insertAddressQuery = "INSERT INTO VoterAddress (VoterID, PermanentAddress, City, Barangay) 
                            VALUES ('$voterID', '$voterAddress', '$voterCity', '$voterBarangay')";
     if (!$conn->query($insertAddressQuery)) {
         die("Error inserting into VoterAddress table: " . $conn->error);
     }
 
-    // Insert into VoterBiodata table
+    
     $insertBiodataQuery = "INSERT INTO VoterBiodata (VoterID, Age, Birthdate, Gender, CivilStatus) 
                            VALUES ('$voterID', '$voterAge', '$voterBirthday', '$voterGender', '$voterStatus')";
     if (!$conn->query($insertBiodataQuery)) {
         die("Error inserting into VoterBiodata table: " . $conn->error);
     }
 
-    // Insert into VoterCredentials table
+    
     $insertCredentialsQuery = "INSERT INTO VoterCredentials (VoterID, Password) 
                                VALUES ('$voterID', '$voterPassword')";
     if (!$conn->query($insertCredentialsQuery)) {
