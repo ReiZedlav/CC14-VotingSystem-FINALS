@@ -5,13 +5,13 @@ function queryForm() {
     const div = document.querySelector('.formShifter');
     div.innerHTML = `
     <div class=idQuery>
-        <form>
+        <form method="POST" action="queryVoter.php">
             <label> VOTER QUERYING SYSTEM </label>
-            <input type="text" placeholder="Query By ID: ">
-            <input type="text" placeholder="First Name...">
-            <input type="text" placeholder="Last Name...">
-            <input type="text" placeholder="Email Address...">
-            <input type="text" placeholder="Phone Number...">
+            <input type="text" name="voterID" placeholder="Query By ID: ">
+            <input type="text" name="firstName" placeholder="First Name...">
+            <input type="text" name="lastName" placeholder="Last Name...">
+            <input type="text" name="email" placeholder="Email Address...">
+            <input type="text" name="phone" placeholder="Phone Number...">
             <input type="submit" id="buttonCursor">
         </form>
     </div>
@@ -314,9 +314,9 @@ function buildForm() {
     const div = document.querySelector('.formShifter');
     div.innerHTML = `
     <div class="buildDepartment">
-        <form>
+        <form method="POST" action="confirmCandidate.php" >
             <label> CONFIRM CANDIDATE FROM NOMINEES </label>
-            <input type="text" placeholder="Nominee ID: ">
+            <input type="text" name="NomineeID" placeholder="Nominee ID: ">
             <input type="submit" id="buttonCursor">
         </form>
     </div>
@@ -332,18 +332,18 @@ function reworkForm(){
     const div = document.querySelector('.formShifter');
     div.innerHTML = `
     <div class="reviseProject">
-        <form>
+        <form method="POST" action="modifyCandidateInfo.php">
             <label> UPDATE CANDIDATE DATA </label>
-            <input type="text" placeholder="CANDIDATE ID: ">
-            <input type="text" placeholder="First Name: ">
-            <input type="text" placeholder="Last Name: ">
-            <input type="text" placeholder="Age: ">
-            <input type="text" placeholder="Gender: ">
-            <input type="text" placeholder="Birthdate: ">
-            <input type="text" placeholder="Status: ">
-            <input type="text" placeholder="Position: ">
-            <input type="text" placeholder="Party: ">
-            <input type="text" placeholder="City: ">
+            <input type="text" name="candidateID" placeholder="CANDIDATE ID: ">
+            <input type="text" name="firstName" placeholder="First Name: ">
+            <input type="text" name="lastName" placeholder="Last Name: ">
+            <input type="text" name="age" placeholder="Age: ">
+            <input type="text" name="gender" placeholder="Gender: ">
+            <input type="text" name="birthdate" placeholder="Birthdate: ">
+            <input type="text" name="civilStatus" placeholder="Status: ">
+            <input type="text" name="position" placeholder="Position: ">
+            <input type="text" name="party" placeholder="Party: ">
+            <input type="text" name="city" placeholder="City: ">
             <input type="submit" id="buttonCursor">
         </form>
     </div>
@@ -480,14 +480,14 @@ function showForm() {
     const div = document.querySelector('.formShifter');
     div.innerHTML = `
     <div class="showProject">
-        <form>
+        <form method="POST" action="queryNominee.php">
             <label> VIEW NOMINEES </label>
-            <input type="text" placeholder="Nominee ID: ">
-            <input type="text" placeholder="First Name: ">
-            <input type="text" placeholder="Last Name: ">
-            <input type="text" placeholder="Position: ">
-            <input type="text" placeholder="Party: ">
-            <input type="text" placeholder="City: ">
+            <input type="text" name="nomineeID" placeholder="Nominee ID: ">
+            <input type="text" name="firstName" placeholder="First Name: ">
+            <input type="text" name="lastName" placeholder="Last Name: ">
+            <input type="text" name="position" placeholder="Position: ">
+            <input type="text" name="party" placeholder="Party: ">
+            <input type="text" name="city" placeholder="City: ">
             <input type="submit" id="buttonCursor">
         </form>
     </div>

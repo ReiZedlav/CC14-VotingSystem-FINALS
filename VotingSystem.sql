@@ -95,7 +95,7 @@ CREATE TABLE Candidate(
     CandidateID INT AUTO_INCREMENT PRIMARY KEY,
     NomineeID INT,
     Votes INT,
-    Confirmed BOOLEAN,
+    Elected BOOLEAN,
     FOREIGN KEY (NomineeID) REFERENCES Nominee(NomineeID)
 );
 
