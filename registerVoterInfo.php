@@ -5,7 +5,6 @@ $password = "root";
 $database = "votingsystem";
 $conn = new mysqli($server, $username, $password, $database);
 
-// Check connection
 if ($conn->connect_error) {
     die("Error 69: Could not connect to database! " . $conn->connect_error);
 }
@@ -25,11 +24,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $voterPassword = password_hash($_POST['voterPassword'], PASSWORD_BCRYPT); 
 
    
-    $insertVoterQuery = "INSERT INTO Voters (FirstName, LastName) VALUES ('$firstName', '$LastName')";
+    $insertVoterQuery = "INSERT INTO Voters (FirstName, LastName) VALUES ('$firstName', '$lastName')";
     if (!$conn->query($insertVoterQuery)) {
         die("Error inserting into Voters table: " . $conn->error);
     }
-    $voterID = $conn->insert_id; // get last inserted id 
+    $voterID = $conn->insert_id; 
 
  
     $insertContactQuery = "INSERT INTO VoterContacts (VoterID, EmailAddress, PhoneNumber) 
@@ -62,6 +61,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Voter information has been successfully uploaded!";
 }
 
-// Close connection
 $conn->close();
 ?>

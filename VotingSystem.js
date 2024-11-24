@@ -86,9 +86,9 @@ function terminateForm() {
     const div = document.querySelector('.formShifter');
     div.innerHTML = `
     <div class="terminateEmployee">
-        <form>
+        <form method="POST" action="removeVoter.php">
             <label> TERMINATE EXISTING VOTER </label>
-            <input type="text" placeholder="VOTER ID:">
+            <input type="text" name="VoterID" placeholder="VOTER ID:">
             <input type="submit" id="buttonCursor">
         </form>
     </div>
@@ -292,13 +292,9 @@ function exploreForm() {
     const div = document.querySelector('.formShifter');
     div.innerHTML = `
     <div class="exploreDepartment">
-        <form>
+        <form method="POST" action="queryCandidate.php">
             <label> SEARCH A CANDIDATE </label>
-            <input type="text" placeholder="CANDIDATE ID: ">
-            <input type="text" placeholder="First Name: ">
-            <input type="text" placeholder="Last Name: ">
-            <input type="text" placeholder="Position: ">
-            <input type="text" placeholder="Party: ">
+            <input type="text" name="candidate_id" placeholder="CANDIDATE ID: ">
             <input type="submit" id="buttonCursor">
         </form>
     </div>
@@ -360,9 +356,9 @@ function dissolveForm() {
     const div = document.querySelector('.formShifter');
     div.innerHTML = `
     <div class="dissolveDepartment">
-        <form>
+        <form method="POST" action="removeCandidate.php">
             <label> DISQUALIFY A CANDIDATE </label>
-            <input type="text" placeholder="CANDIDATE ID:">
+            <input type="text" name="candidateID" placeholder="CANDIDATE ID:">
             <input type="submit" id="buttonCursor">
         </form>
     </div>
@@ -556,9 +552,9 @@ function abandonForm() {
     const div = document.querySelector('.formShifter');
     div.innerHTML = `
     <div class="abandonProject">
-        <form>
+        <form method="POST" action="removeNominee.php">
             <label> DISQUALIFY EXISTING NOMINEE </label>
-            <input type="text" placeholder="NOMINEE ID:">
+            <input type="text" name="nomineeID" placeholder="NOMINEE ID:">
             <input type="submit" id="buttonCursor">
         </form>
     </div>

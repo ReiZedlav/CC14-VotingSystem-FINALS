@@ -14,7 +14,7 @@ CREATE TABLE VoterContacts(
     VoterID INT,
     EmailAddress VARCHAR(255),
     PhoneNumber VARCHAR(20),
-    FOREIGN KEY (VoterID) REFERENCES Voters(VoterID)
+    FOREIGN KEY (VoterID) REFERENCES Voters(VoterID) ON DELETE CASCADE
 );
 
 CREATE TABLE VoterAddress(
@@ -22,7 +22,7 @@ CREATE TABLE VoterAddress(
     PermanentAddress VARCHAR(255),
     City VARCHAR(50),
     Barangay VARCHAR(50),
-    FOREIGN KEY (VoterID) REFERENCES Voters(VoterID)
+    FOREIGN KEY (VoterID) REFERENCES Voters(VoterID) ON DELETE CASCADE
 );
 
 CREATE TABLE VoterBiodata(
@@ -31,13 +31,13 @@ CREATE TABLE VoterBiodata(
     Birthdate DATE,
     Gender VARCHAR(10),
     CivilStatus VARCHAR(50),
-    FOREIGN KEY (VoterID) REFERENCES Voters(VoterID)
+    FOREIGN KEY (VoterID) REFERENCES Voters(VoterID) ON DELETE CASCADE
 );
 
 CREATE TABLE VoterCredentials(
     VoterID INT,
     Password varchar(255),
-    FOREIGN KEY (VoterID) REFERENCES Voters(VoterID)
+    FOREIGN KEY (VoterID) REFERENCES Voters(VoterID) ON DELETE CASCADE
 );
 
 
@@ -65,7 +65,7 @@ CREATE TABLE NomineeBioData(
     Gender varchar(100),
     Birthdate DATE,
     CivilStatus varchar(100),
-    FOREIGN KEY (NomineeID) REFERENCES Nominee(NomineeID)
+    FOREIGN KEY (NomineeID) REFERENCES Nominee(NomineeID) ON DELETE CASCADE
 );
 
 CREATE TABLE NomineePosition(
@@ -73,7 +73,7 @@ CREATE TABLE NomineePosition(
     Position varchar(100),
     Party varchar(100),
     City varchar(100),
-    FOREIGN KEY (NomineeID) REFERENCES Nominee(NomineeID)
+    FOREIGN KEY (NomineeID) REFERENCES Nominee(NomineeID) ON DELETE CASCADE
 );
 
 
@@ -96,7 +96,7 @@ CREATE TABLE Candidate(
     NomineeID INT,
     Votes INT,
     Elected BOOLEAN,
-    FOREIGN KEY (NomineeID) REFERENCES Nominee(NomineeID)
+    FOREIGN KEY (NomineeID) REFERENCES Nominee(NomineeID) 
 );
 
 
