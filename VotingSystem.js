@@ -19,7 +19,7 @@ function queryForm() {
 
     const results = document.querySelector('.inner-grid-two');
     results.innerHTML = `
-        BACKEND RESULTS HERE
+        Query a voter here...
     `;
 }
 
@@ -49,7 +49,7 @@ function createForm() {
 
     const results = document.querySelector('.inner-grid-two');
     results.innerHTML = `
-        BACKEND RESULTS HERE
+        Register a new voter here...
     `;
 }
 
@@ -78,7 +78,7 @@ function modifyForm() {
 
     const results = document.querySelector('.inner-grid-two');
     results.innerHTML = `
-        BACKEND RESULTS HERE
+        Modify existing voter's information here...
     `;
 }
 
@@ -96,7 +96,7 @@ function terminateForm() {
 
     const results = document.querySelector('.inner-grid-two');
     results.innerHTML = `
-        BACKEND RESULTS HERE
+        Purge an existing voter here...
     `;
 }
 
@@ -220,7 +220,7 @@ function mutateToVoters(){
 
     const results = document.querySelector('.inner-grid-two');
     results.innerHTML = `
-        BACKEND RESULTS HERE
+        Select any available fields for voters...
     `;
 }
 
@@ -280,7 +280,7 @@ function mutateToCandidates(){
 
     const results = document.querySelector('.inner-grid-two');
     results.innerHTML = `
-        BACKEND RESULTS HERE
+        Select any available fields for candidates...
     `;
 }
 
@@ -302,7 +302,7 @@ function exploreForm() {
 
     const results = document.querySelector('.inner-grid-two');
     results.innerHTML = `
-        BACKEND RESULTS HERE
+        Query a candidate here...
     `;
 }
 
@@ -320,7 +320,7 @@ function buildForm() {
 
     const results = document.querySelector('.inner-grid-two');
     results.innerHTML = `
-        BACKEND RESULTS HERE
+        Confirm a new candidate here...
     `;
 }
 
@@ -347,7 +347,7 @@ function reworkForm(){
 
     const results = document.querySelector('.inner-grid-two');
     results.innerHTML = `
-        BACKEND RESULTS HERE
+        Modify existing candidate here...
     `;
 
 }
@@ -366,7 +366,7 @@ function dissolveForm() {
 
     const results = document.querySelector('.inner-grid-two');
     results.innerHTML = `
-        BACKEND RESULTS HERE
+        Disqualify a candidate here...
     `;
 }
 
@@ -468,7 +468,7 @@ function mutateToNominees(){
 
     const results = document.querySelector('.inner-grid-two');
     results.innerHTML = `
-        BACKEND RESULTS HERE
+        Select any available fields for nominees...
     `;
 }
 
@@ -491,7 +491,7 @@ function showForm() {
 
     const results = document.querySelector('.inner-grid-two');
     results.innerHTML = `
-        BACKEND RESULTS HERE
+        Query a nominee here...
     `;
 }
 
@@ -517,7 +517,7 @@ function createProjectForm() {
 
     const results = document.querySelector('.inner-grid-two');
     results.innerHTML = `
-        BACKEND RESULTS HERE
+        Insert a new nominee here...
     `;
 }
 
@@ -544,7 +544,7 @@ function reviseForm() {
 
     const results = document.querySelector('.inner-grid-two');
     results.innerHTML = `
-        BACKEND RESULTS HERE
+        Modify existing nominee details here...
     `;
 }
 
@@ -562,7 +562,7 @@ function abandonForm() {
 
     const results = document.querySelector('.inner-grid-two');
     results.innerHTML = `
-        BACKEND RESULTS HERE
+        Disqualify a nominee here...
     `;
 }
 
